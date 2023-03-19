@@ -1,0 +1,65 @@
+<!--
+
+    (c) Copyright 2021 ABB
+
+    Any unauthorized use, reproduction, distribution,
+    or disclosure to third parties is strictly forbidden.
+    ABB reserves all rights regarding Intellectual Property Rights
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>I/O WebApp</title>
+    <!-- 
+        This example webapp uses some components to read and write RAPID values and I/O signal.
+        Load the provided Example.mod module into your controller and then run the app to test it out.
+    -->
+    <link rel="stylesheet" type="text/css" href="app.css" />
+
+    <!-- include used components -->
+    <script src="fp-components/fp-components-common.js"></script>
+    <script src="fp-components/fp-components-button-a.js"></script>
+    <script src="fp-components/fp-components-popup-a.js"></script>
+    <script src="fp-components/fp-components-menu-a.js"></script>
+    <script src="fp-components/fp-components-digital-a.js"></script>
+    <script src="fp-components/fp-components-switch-a.js"></script>
+    <script src="fp-components/fp-components-input-a.js"></script>
+    <script src="fp-components/fp-components-linechart-a.js"></script>
+    <script src="fp-components/fp-components-dropdown-a.js"></script>
+    <script src="fp-components/fp-components-toggle-a.js"></script>
+
+    <!-- include RWS api -->
+    <script src="rws-api/omnicore-rws.js"></script>
+    <script src="rws-api/omnicore-app.js"></script>
+
+    <!-- include app javascript -->
+    <script src="app.js"></script>
+</head>
+
+
+
+
+<body>
+    <!--- MAIN VIEW -->
+    <div class="content" id="main-view"></div>
+        <div class="row">
+            <div class="label">OUTPUTS</div>
+        </div>
+        <!-----> 
+        <div class="col">            
+            <div class="signal-col" id="mySwitchDiv"></div>            
+            <!----->
+            <div class="signal-col" id="myDO2Div"></div>
+            <!------>
+            <!--<p class="label">TestSignal</p>-->
+            <div class="signal">
+                <div id="myDigitalDiv"></div>
+            </div>
+        </div>
+    <div id="menu-main"></div>
+</body>
+
+</html>
