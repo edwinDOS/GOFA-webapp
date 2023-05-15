@@ -1,5 +1,5 @@
 # GoFaIO
-Web app for control the Input/Output of the GoFa robot
+Web app for the Flexpendant to control the Input/Output of the GoFa robot
 
 Steps to deploy the app in the real controller:
 1) Create the folder WebApps in the $HOME/ directory
