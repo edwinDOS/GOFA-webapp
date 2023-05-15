@@ -1,5 +1,7 @@
 # GoFaIO
-Web app for the Flexpendant to control the Input/Output of the GoFa robot
+Web app for the Flexpendant to control the Input/Output of the GoFa robot. Current functionalities:
++ Activation of two digital outputs (Local_IO_0_DO1, Local_IO_0_DO2)
++ Activation of two digital inputs (Local_IO_0_DI1, Local_IO_0_DI2)
 
 Steps to deploy the app in the real controller:
 1) Create the folder WebApps in the $HOME/ directory
