@@ -16,8 +16,10 @@
     <!-- 
         This example webapp uses some components to read and write RAPID values and I/O signal.
         Load the provided Example.mod module into your controller and then run the app to test it out.
+        <link rel="stylesheet" type="text/css" href="app.css" />
     -->
-    <link rel="stylesheet" type="text/css" href="app.css" />
+    
+    <link rel="stylesheet" type="text/css" href="LiftKit.css">
 
     <!-- include used components -->
     <script src="fp-components/fp-components-common.js"></script>
@@ -39,27 +41,78 @@
     <script src="app.js"></script>
 </head>
 
-
-
-
 <body>
-    <!--- MAIN VIEW -->
-    <div class="content" id="main-view"></div>
-        <div class="row">
-            <div class="label">OUTPUTS</div>
-        </div>
-        <!-----> 
-        <div class="col">            
-            <div class="signal-col" id="mySwitchDiv"></div>            
-            <!----->
-            <div class="signal-col" id="myDO2Div"></div>
-            <!------>
-            <!--<p class="label">TestSignal</p>-->
-            <div class="signal">
-                <div id="myDigitalDiv"></div>
+
+    <!-- VIEW: MAIN OVERVIEW (where the app starts) ........................................................................................ -->
+
+    <div id="LiftKit-main-grid-container" class="LiftKit-generic-grid-container">
+
+        <!-- Main info section in the top left corner -->
+
+        <div id="LiftKit-main-grid-area-1" class="LiftKit-Main-infobox">
+
+            <div class="LiftKit-main-infobox">
+                <div>
+                    <p>Outputs control</p>
+                </div>
+                <div>
+                    <table class="LiftKit-main-table">
+                        <tr>
+                            <td>
+                                <div class="signal" id="mySwitchDiv1"></div>
+                            </td>
+                            <td>
+                                <div class="signal" id="mySwitchDiv2"></div>
+                            </td>
+                            <td>
+                                <div class="signal" id="mySwitchDiv3"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="signal" id="mySwitchDiv4"></div>
+                            </td>
+                            <td>
+                                <div class="signal" id="mySwitchDiv5"></div>
+                            </td>
+                            <td>
+                                <div class="signal" id="mySwitchDiv6"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="LiftKit-main-infobox">
+                <div>
+                    <p>Inputs State</p>
+                </div>
+                <div>
+                    <table class="LiftKit-main-table">
+                        <tr>
+                            <td>
+                                <div id="myButtonDiv1"></div>
+                            </td>
+                            <td>
+                                <div id="myButtonDiv2"></div>
+                            </td>
+                            <td> 
+                                <div id="myButtonDiv3"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="myButtonDiv4"></div>
+                            </td>
+                            <td>
+                                <div id="myButtonDiv5"></div>
+                            </td>
+                            <td>
+                                <div id="myButtonDiv6"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
-    <div id="menu-main"></div>
+    </div>
 </body>
-
-</html>

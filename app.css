@@ -100,3 +100,17 @@ p {
     padding: 30px;
     flex: 1 1 auto;
 }
+
+.LiftKit-main-infobox {
+    border-style: solid;
+    border-radius: 2px;
+    border-color: #d5d5d5;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: column;
+
+    width: 100%;
+    height: auto;
+    padding: 0;    
+}
